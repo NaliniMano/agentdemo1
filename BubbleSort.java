@@ -1,3 +1,25 @@
+/**
+ * Bubble Sort Implementation
+ * 
+ * Problem: Sort an array by repeatedly comparing adjacent elements
+ * Example: [64, 34, 25, 12] → [12, 25, 34, 64]
+ * 
+ * Approach:
+ * 1. Compare adjacent elements
+ * 2. Swap if they are in wrong order
+ * 3. Repeat for each element
+ * 4. After each iteration, largest element bubbles up to end
+ * 
+ * Time Complexity:
+ * - Best Case: O(n) - already sorted
+ * - Average Case: O(n^2)
+ * - Worst Case: O(n^2) - reverse sorted
+ * 
+ * Space Complexity: O(1) - in-place sorting
+ * 
+ * Note: Not efficient for large datasets
+ * Better alternatives: QuickSort, MergeSort, HeapSort
+ */
 public class BubbleSort {
     public static void bubbleSort(int[] arr) {
         int n = arr.length;

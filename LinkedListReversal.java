@@ -1,3 +1,26 @@
+/**
+ * Linked List Reversal - Common Interview Problem
+ * 
+ * Problem: Reverse a singly linked list
+ * Example: 1->2->3->4->5 becomes 5->4->3->2->1
+ * 
+ * Approach: Iterative with three pointers
+ * 1. Keep track of previous, current, and next nodes
+ * 2. Reverse links one by one
+ * 3. Move pointers forward
+ * 
+ * Time Complexity: O(n) where n is number of nodes
+ * Space Complexity: O(1) - in-place reversal
+ * 
+ * Alternative Approaches:
+ * 1. Recursive solution - O(n) time, O(n) space due to call stack
+ * 2. Stack-based solution - O(n) time, O(n) space
+ * 
+ * Interview Tips:
+ * - Discuss handling edge cases (empty list, single node)
+ * - Mention maintaining head/tail references
+ * - Consider doubly linked list variation
+ */
 public class LinkedListReversal {
     static class ListNode {
         int val;

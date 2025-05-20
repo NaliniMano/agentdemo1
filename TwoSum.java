@@ -1,3 +1,21 @@
+/**
+ * Two Sum Problem - Very common in interviews
+ * 
+ * Problem: Find two numbers in array that add up to target sum
+ * Example: nums = [2, 7, 11, 15], target = 9
+ * Output: [0, 1] (because nums[0] + nums[1] = 2 + 7 = 9)
+ * 
+ * Approach: HashMap (most efficient)
+ * 1. Store complements in HashMap
+ * 2. For each number, check if its complement exists
+ * 
+ * Time Complexity: O(n) - single pass through array
+ * Space Complexity: O(n) - storing numbers in HashMap
+ * 
+ * Alternative Approaches:
+ * 1. Brute Force - O(n^2) time, O(1) space
+ * 2. Sort and Two Pointers - O(nlogn) time, O(1) space
+ */
 import java.util.HashMap;
 
 public class TwoSum {
